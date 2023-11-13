@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import FrontPage from './pages/FrontPage.js'
+import { Routes, Route} from 'react-router-dom'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    //! Sætter en Rute op, så man kan lave undersider i React, lidt indivklet, men det burde virke
+    <Routes>
+          <Route path='/'element={<FrontPage/>}/>
+    </Routes>
   );
 }
 
-export default App;
+export default App
+
+
+//! Prøvede at få det til at virke med Login system osv, det må vi lege med på et andet tidspunkt
+// API Key
+//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVlZG9rc3Z5eGl4cmlxa3BjZWFsIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTk4OTk1NzMsImV4cCI6MjAxNTQ3NTU3M30.Pojn2SHMrtsElufrkNodLi9XxWZeY7CSXD5k49WU5Os
+
+// Project URL
+// https://eedoksvyxixriqkpceal.supabase.co
