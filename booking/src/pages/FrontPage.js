@@ -10,12 +10,12 @@ const FrontPage = () => {
 
 
       {/* Giver styling til billede / figuren til venstre for login-formen + fjerner den på mobilskærm */}
-      <div className='w-[468.7px] h-[600px] ms-[52%] justify-center bg-[var(--cphYellow)] hidden md:flex'>
+      <div className='w-[468.7px] h-[600px] md:ms-auto justify-center bg-[var(--cphYellow)] hidden md:flex'>
         <img src={frontPageImg} className='' alt=''></img>
       </div>
       
       {/* Styler formen */}
-      <div class="max-w-[468.7px] md:h-[600px] md:grid md:me-[40%] text-[var(--textColor)] bg-white flex flex-col justify-center px-6 py-12 lg:px-8">
+      <div class="max-w-[468.7px] md:h-[600px] md:grid  text-[var(--textColor)] bg-white flex flex-col justify-center px-6 py-12 lg:px-8">
         <div class="sm:mx-auto sm:w-full sm:max-w-sm">
 
           {/* Laver CPH Business logo ud af span's */}
